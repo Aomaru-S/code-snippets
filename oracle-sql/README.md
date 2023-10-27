@@ -31,7 +31,7 @@ SELECT
   nullable,
   data_default
 FROM user_tab_columns
-WHERE table_name = '&table'
+WHERE table_name = UPPER('&table')
 ORDER BY column_id;
 ```
 
@@ -52,6 +52,6 @@ JOIN user_cons_columns ucc
 JOIN user_constraints uc
   ON uc.table_name = ucc.table_name
   AND uc.constraint_name = ucc.constraint_name
-WHERE ucc.table_name = '&table'
+WHERE ucc.table_name = UPPER('&table')
 ORDER BY utc.column_id;
 ```
