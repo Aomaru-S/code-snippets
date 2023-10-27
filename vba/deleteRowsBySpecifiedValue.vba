@@ -1,4 +1,4 @@
-Sub deleteNightsRow(value: String)
+Sub deleteSpecifiedValueRow(value: String)
     Dim MAX_SUPPORT_ROWS As Integer: MAX_SUPPORT_ROWS = 200
     Dim COLUMN_COL As String: COLUMN_COL = "B"
 
